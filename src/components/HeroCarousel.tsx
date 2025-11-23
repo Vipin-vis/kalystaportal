@@ -130,8 +130,7 @@ const HeroCarousel: React.FC = () => {
             mb: 3,
           }}
         >
-        Bespoke South Indian weddings, reception décor, and intimate
-        celebrations styled in signature black-and-gold luxury.
+        Bespoke South Indian weddings, reception décor, and intimate celebrations designed with graceful, understated luxury.
         </Typography>
 
         <Stack direction="row" spacing={2}>
