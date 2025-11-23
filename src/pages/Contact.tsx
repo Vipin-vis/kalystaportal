@@ -302,7 +302,7 @@ const Contact: React.FC = () => {
                   <PhoneIcon sx={{ color: "primary.main", fontSize: 20 }} />
                   <Box>
                     <Typography variant="body2">+91 70127 61287</Typography>
-                    <Typography variant="body2">+91 85905 25127</Typography>
+                    <Typography variant="body2">+91 85475 69694</Typography>
                     <Typography
                       variant="caption"
                       sx={{ color: "text.secondary" }}

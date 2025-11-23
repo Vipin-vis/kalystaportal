@@ -27,6 +27,7 @@ const Packages: React.FC = () => {
           >
             PACKAGES
           </Typography>
+
           <Typography
             variant="h4"
             sx={{
@@ -37,14 +38,15 @@ const Packages: React.FC = () => {
           >
             Wedding & Event Packages
           </Typography>
+
           <Typography
             variant="body2"
             sx={{ color: "text.secondary", maxWidth: 620 }}
           >
             Every venue, family and celebration is unique. These packages are
-            designed as a starting point to understand budgets and
-            possibilities. Final pricing is customised based on guest count,
-            location, décor density and specific requirements.
+            designed as a starting point to understand possibilities. Final
+            details are customised based on guest count, location, décor style,
+            menu preferences and technical requirements.
           </Typography>
 
           <Box
@@ -52,22 +54,14 @@ const Packages: React.FC = () => {
               mt: 2,
               display: "flex",
               flexWrap: "wrap",
-              gap: 1, // works for both row & column gaps
+              gap: 1,
             }}
           >
             <Chip label="Décor & Stage" size="small" sx={chipStyle} />
-            <Chip
-              label="Complete Wedding Packages"
-              size="small"
-              sx={chipStyle}
-            />
+            <Chip label="Complete Wedding Packages" size="small" sx={chipStyle} />
             <Chip label="Traditional Sadya" size="small" sx={chipStyle} />
             <Chip label="Reception Cuisine" size="small" sx={chipStyle} />
-            <Chip
-              label="Cultural & Entertainment"
-              size="small"
-              sx={chipStyle}
-            />
+            <Chip label="Cultural & Entertainment" size="small" sx={chipStyle} />
             <Chip label="Lights & Sound" size="small" sx={chipStyle} />
           </Box>
         </Box>
@@ -87,55 +81,42 @@ const Packages: React.FC = () => {
                 <Typography variant="overline" sx={overlineStyle}>
                   COMPLETE WEDDING PACKAGES
                 </Typography>
+
                 <Typography variant="h6" sx={{ mt: 0.5, mb: 1 }}>
                   Décor & planning bundles
                 </Typography>
+
                 <Typography
                   variant="body2"
                   sx={{ color: "text.secondary", mb: 1.5 }}
                 >
-                  Tailored packages that cover the full wedding décor experience
-                  – from stage and entrance to key photo spots – with optional
-                  add-ons for planning and vendor coordination.
+                  Tailored packages covering the full wedding décor experience
+                  – stage, entrance, photo spots and optional planning
+                  coordination.
                 </Typography>
 
-                <Typography
-                  variant="body2"
-                  sx={{ color: "primary.main", fontWeight: 500, mb: 0.5 }}
-                >
-                  Indicative range: ₹25,000 to ₹3,00,000+
-                </Typography>
-                <Typography variant="caption" sx={{ color: "text.secondary" }}>
-                  Pricing depends on décor style, venue size, floral choices,
-                  structure, and number of events (engagement, wedding,
-                  reception).
-                </Typography>
-
-                <Box sx={{ mt: 2 }} component="div">
+                <Box sx={{ mt: 2 }}>
                   <Typography
                     variant="subtitle2"
                     sx={{ mb: 0.5, fontSize: 13 }}
                   >
                     Sample tiers:
                   </Typography>
+
                   <ul style={ulStyle}>
                     <li>
-                      <strong>Essential Décor (from ~₹25,000)</strong> – Simple
-                      elegant stage, basic floral elements, minimal entrance
-                      décor.
+                      <strong>Essential Décor</strong> – simple elegant stage,
+                      minimal floral accents, basic entrance décor.
                     </li>
                     <li>
-                      <strong>
-                        Signature Wedding (from ~₹75,000–₹1,50,000)
-                      </strong>{" "}
-                      – Detailed stage styling, entrance, photo corner, pathway
-                      elements and coordinated look for your main events.
+                      <strong>Signature Wedding</strong> – detailed stage,
+                      entrance concepts, photo corners and coordinated décor
+                      across events.
                     </li>
                     <li>
-                      <strong>Luxury Experience (₹1,50,000–₹3,00,000+)</strong>{" "}
-                      – High-impact floral work, custom structures, layered
-                      lighting, multiple thematic spots and an overall luxury
-                      visual experience.
+                      <strong>Luxury Experience</strong> – high-impact florals,
+                      custom structures, layered lighting and curated thematic
+                      spots.
                     </li>
                   </ul>
                 </Box>
@@ -143,48 +124,47 @@ const Packages: React.FC = () => {
             </Card>
           </Grid>
 
-          {/* Stage-only / Focus Décor */}
+          {/* Stage-only */}
           <Grid size={{ xs: 12, md: 6 }}>
             <Card sx={cardStyle}>
               <CardContent>
                 <Typography variant="overline" sx={overlineStyle}>
                   STAGE / MANDAP-ONLY PACKAGES
                 </Typography>
+
                 <Typography variant="h6" sx={{ mt: 0.5, mb: 1 }}>
                   Focused stage styling
                 </Typography>
+
                 <Typography
                   variant="body2"
                   sx={{ color: "text.secondary", mb: 1.5 }}
                 >
-                  Ideal if your venue already provides basic décor and you want
-                  a standout, well-designed stage or mandap as the focal point.
+                  Ideal for venues that already provide basic décor. Create a
+                  standout stage or mandap as the main visual highlight.
                 </Typography>
 
-                <Box component="div">
-                  <ul style={ulStyle}>
-                    <li>
-                      <strong>Compact Home / Hall Stage</strong> – from ~₹25,000
-                    </li>
-                    <li>
-                      <strong>Grand Hall Stage</strong> – typically from
-                      ~₹50,000–₹1,20,000 depending on structure, florals and
-                      lighting
-                    </li>
-                    <li>
-                      <strong>Custom Theme Stage</strong> – for fully curated,
-                      themed backdrops and concepts, pricing is shared after
-                      understanding size and design direction.
-                    </li>
-                  </ul>
-                  <Typography
-                    variant="caption"
-                    sx={{ color: "text.secondary", display: "block", mt: 1 }}
-                  >
-                    All stage packages can be paired with add-ons such as photo
-                    corners, name boards, welcome boards and entrance styling.
-                  </Typography>
-                </Box>
+                <ul style={ulStyle}>
+                  <li>
+                    <strong>Compact Home / Hall Stage</strong>
+                  </li>
+                  <li>
+                    <strong>Grand Hall Stage</strong> – based on florals,
+                    lighting and structure
+                  </li>
+                  <li>
+                    <strong>Custom Theme Stage</strong> – curated look designed
+                    uniquely for your venue
+                  </li>
+                </ul>
+
+                <Typography
+                  variant="caption"
+                  sx={{ color: "text.secondary", mt: 1, display: "block" }}
+                >
+                  Add-ons include photo corners, welcome boards and entrance
+                  styling.
+                </Typography>
               </CardContent>
             </Card>
           </Grid>
@@ -197,33 +177,26 @@ const Packages: React.FC = () => {
               Traditional Kerala Sadya Packages
             </Typography>
             <Typography variant="body2" sx={{ color: "text.secondary", mb: 2 }}>
-              Authentic Kerala sadya served with attention to taste,
-              presentation and timing – perfect for temple weddings, home
-              functions and traditional halls.
+              Authentic sadya prepared by professional cooks and served with
+              attention to timing and presentation.
             </Typography>
           </Grid>
 
-          {/* Four sadya tiers */}
+          {/* 4 tiers */}
           <Grid size={{ xs: 12, md: 3 }}>
             <Card sx={cardStyle}>
               <CardContent>
                 <Typography variant="overline" sx={overlineStyle}>
                   BASIC SADYA
                 </Typography>
-                <Typography variant="h6" sx={{ mb: 0.5 }}>
-                  From ₹150 / person
+                <Typography variant="body2" sx={{ color: "text.secondary", mb: 1 }}>
+                  Simple, traditional spread for intimate gatherings.
                 </Typography>
-                <Typography
-                  variant="body2"
-                  sx={{ color: "text.secondary", mb: 1 }}
-                >
-                  Simple, traditional spread for intimate or budget-conscious
-                  functions.
-                </Typography>
+
                 <ul style={ulStyle}>
                   <li>Basic curries & thorans</li>
                   <li>Pickles & pappadam</li>
-                  <li>Payasam (single variety)</li>
+                  <li>Single payasam</li>
                 </ul>
               </CardContent>
             </Card>
@@ -235,19 +208,13 @@ const Packages: React.FC = () => {
                 <Typography variant="overline" sx={overlineStyle}>
                   STANDARD SADYA
                 </Typography>
-                <Typography variant="h6" sx={{ mb: 0.5 }}>
-                  From ₹180 / person
+                <Typography variant="body2" sx={{ color: "text.secondary", mb: 1 }}>
+                  Balanced sadya with more accompaniments.
                 </Typography>
-                <Typography
-                  variant="body2"
-                  sx={{ color: "text.secondary", mb: 1 }}
-                >
-                  A well-rounded sadya with more accompaniments and balanced
-                  flavours.
-                </Typography>
+
                 <ul style={ulStyle}>
                   <li>Full sadya curries & sides</li>
-                  <li>2+ thorans and upperis</li>
+                  <li>Multiple upperis/thorans</li>
                   <li>1–2 varieties of payasam</li>
                 </ul>
               </CardContent>
@@ -260,19 +227,14 @@ const Packages: React.FC = () => {
                 <Typography variant="overline" sx={overlineStyle}>
                   PREMIUM SADYA
                 </Typography>
-                <Typography variant="h6" sx={{ mb: 0.5 }}>
-                  From ₹250 / person
+                <Typography variant="body2" sx={{ color: "text.secondary", mb: 1 }}>
+                  Enhanced menu with richer dishes.
                 </Typography>
-                <Typography
-                  variant="body2"
-                  sx={{ color: "text.secondary", mb: 1 }}
-                >
-                  Enhanced menu with richer payasams and special side dishes.
-                </Typography>
+
                 <ul style={ulStyle}>
-                  <li>Extended curry & side selection</li>
+                  <li>Extended curry selections</li>
                   <li>Special dishes on request</li>
-                  <li>2–3 varieties of payasam</li>
+                  <li>2–3 payasams</li>
                 </ul>
               </CardContent>
             </Card>
@@ -284,34 +246,28 @@ const Packages: React.FC = () => {
                 <Typography variant="overline" sx={overlineStyle}>
                   LUXURY SADYA
                 </Typography>
-                <Typography variant="h6" sx={{ mb: 0.5 }}>
-                  From ₹300 / person
+                <Typography variant="body2" sx={{ color: "text.secondary", mb: 1 }}>
+                  A lavish, premium sadya with extended varieties.
                 </Typography>
-                <Typography
-                  variant="body2"
-                  sx={{ color: "text.secondary", mb: 1 }}
-                >
-                  A lavish, showcase-style sadya with premium elements.
-                </Typography>
+
                 <ul style={ulStyle}>
-                  <li>Premium, expanded menu</li>
-                  <li>Special regional or festive dishes</li>
-                  <li>Multiple payasams & dessert focus</li>
+                  <li>Premium dishes & special festival items</li>
+                  <li>Multiple dessert options</li>
+                  <li>Full expanded menu</li>
                 </ul>
               </CardContent>
             </Card>
           </Grid>
         </Grid>
 
-        {/* Reception Non-Veg Cuisine */}
+        {/* Reception Cuisine */}
         <Grid container spacing={3}>
           <Grid size={{ xs: 12 }}>
             <Typography variant="h6" sx={{ mt: 2, mb: 1 }}>
               Reception Non-Veg Cuisine Packages
             </Typography>
             <Typography variant="body2" sx={{ color: "text.secondary", mb: 2 }}>
-              Designed for receptions and evening events, these non-vegetarian
-              menus balance taste, presentation and guest preferences.
+              Curated non-veg menus designed for receptions and evening events.
             </Typography>
           </Grid>
 
@@ -321,21 +277,19 @@ const Packages: React.FC = () => {
                 <Typography variant="overline" sx={overlineStyle}>
                   CELEBRATION MENU
                 </Typography>
-                <Typography variant="h6" sx={{ mb: 0.5 }}>
-                  From ~₹350 / plate
-                </Typography>
+
                 <Typography
                   variant="body2"
                   sx={{ color: "text.secondary", mb: 1 }}
                 >
-                  Ideal for moderate budgets while keeping the experience
-                  complete and satisfying.
+                  Balanced menus suitable for moderate to large gatherings.
                 </Typography>
+
                 <ul style={ulStyle}>
-                  <li>1–2 non-veg mains (e.g., chicken curry, fish fry)</li>
-                  <li>Veg curry, rice / chapati / appam</li>
+                  <li>1–2 non-veg mains (chicken, fish)</li>
+                  <li>Rice / chapati / appam options</li>
                   <li>Salad, pickle, dessert</li>
-                  <li>Tea / coffee add-ons optional</li>
+                  <li>Optional tea/coffee counter</li>
                 </ul>
               </CardContent>
             </Card>
@@ -345,47 +299,36 @@ const Packages: React.FC = () => {
             <Card sx={cardStyle}>
               <CardContent>
                 <Typography variant="overline" sx={overlineStyle}>
-                  LUXURY RECEPTION MENU
+                  PREMIUM RECEPTION MENU
                 </Typography>
-                <Typography variant="h6" sx={{ mb: 0.5 }}>
-                  Premium menus up to ~₹1,200 / plate
-                </Typography>
+
                 <Typography
                   variant="body2"
                   sx={{ color: "text.secondary", mb: 1 }}
                 >
-                  For high-end receptions and VIP gatherings with a focus on
-                  variety and presentation.
+                  High-variety menus suitable for luxury receptions and VIP
+                  gatherings.
                 </Typography>
+
                 <ul style={ulStyle}>
-                  <li>
-                    Multiple non-veg mains (chicken, mutton, seafood options)
-                  </li>
-                  <li>Live counters (e.g., grill / shawarma / pasta)</li>
-                  <li>Assorted starters & canapés</li>
-                  <li>Rich dessert spread and mocktails</li>
+                  <li>Multiple non-veg mains (chicken, mutton, seafood)</li>
+                  <li>Live counters (grill, pasta, shawarma etc.)</li>
+                  <li>Starters & canapés</li>
+                  <li>Dessert spread and mocktails</li>
                 </ul>
-                <Typography
-                  variant="caption"
-                  sx={{ color: "text.secondary", display: "block", mt: 1 }}
-                >
-                  Exact per-plate pricing depends on menu selections, live
-                  counters, and serving style (buffet vs. plated).
-                </Typography>
               </CardContent>
             </Card>
           </Grid>
         </Grid>
 
-        {/* Cultural & Entertainment Packages */}
+        {/* Cultural & Entertainment */}
         <Grid container spacing={3}>
           <Grid size={{ xs: 12 }}>
             <Typography variant="h6" sx={{ mt: 2, mb: 1 }}>
               Cultural & Entertainment Packages
             </Typography>
             <Typography variant="body2" sx={{ color: "text.secondary", mb: 2 }}>
-              Add character and energy to your celebration with curated programs
-              that reflect your culture and personality.
+              Add cultural charm, energy and entertainment to your event.
             </Typography>
           </Grid>
 
@@ -395,12 +338,9 @@ const Packages: React.FC = () => {
                 <Typography variant="overline" sx={overlineStyle}>
                   VALLAPATTU
                 </Typography>
-                <Typography variant="h6" sx={{ mb: 0.5 }}>
-                  From ~₹20,000
-                </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  Traditional vallapaatu / vattapaatu performances that bring
-                  warmth and nostalgia to pre-wedding and family events.
+                  Traditional performances ideal for family gatherings and
+                  pre-wedding events.
                 </Typography>
               </CardContent>
             </Card>
@@ -412,18 +352,14 @@ const Packages: React.FC = () => {
                 <Typography variant="overline" sx={overlineStyle}>
                   DJ & FUSION
                 </Typography>
-                <Typography variant="h6" sx={{ mb: 0.5 }}>
-                  DJ from ~₹25,000
+
+                <Typography variant="body2" sx={{ color: "text.secondary", mb: 1 }}>
+                  Modern DJ sets with optional lighting and sound.
                 </Typography>
-                <Typography
-                  variant="body2"
-                  sx={{ color: "text.secondary", mb: 1 }}
-                >
-                  Modern DJ sets with sound and basic lighting options.
-                </Typography>
+
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  Fusion programs (DJ + traditional / live elements) typically
-                  from ~₹30,000 depending on duration and setup.
+                  Fusion events combining DJ + traditional live elements
+                  available on request.
                 </Typography>
               </CardContent>
             </Card>
@@ -435,12 +371,9 @@ const Packages: React.FC = () => {
                 <Typography variant="overline" sx={overlineStyle}>
                   MOHINIYATTAM
                 </Typography>
-                <Typography variant="h6" sx={{ mb: 0.5 }}>
-                  From ~₹35,000
-                </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  Elegant Mohiniyattam performances curated for stage shows,
-                  reception segments or cultural evenings.
+                  Elegant Mohiniyattam performances curated for receptions and
+                  cultural evenings.
                 </Typography>
               </CardContent>
             </Card>
@@ -452,20 +385,16 @@ const Packages: React.FC = () => {
                 <Typography variant="overline" sx={overlineStyle}>
                   LIGHTS & SOUND
                 </Typography>
-                <Typography variant="h6" sx={{ mb: 0.5 }}>
-                  From ~₹25,000–₹50,000
-                </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  Professional lights and sound setup for weddings, receptions
-                  and stage shows – final pricing varies by venue size, duration
-                  and technical requirements.
+                  Professional lighting & sound solutions for weddings,
+                  receptions and stage events.
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
         </Grid>
 
-        {/* Note + CTA */}
+        {/* CTA */}
         <Box
           sx={{
             borderRadius: 3,
@@ -479,32 +408,9 @@ const Packages: React.FC = () => {
             variant="caption"
             sx={{ color: "text.secondary", display: "block", mb: 1.5 }}
           >
-            All prices mentioned are indicative starting points to help you
-            understand budgets. Final quotes are shared after a discussion about
-            your date, venue, guest count, décor style, menu preferences and
-            technical needs.
+            All packages are customised after understanding your event needs.
+            Share your date, venue and expectations to receive a tailored plan.
           </Typography>
-
-          <Stack
-            direction={{ xs: "column", md: "row" }}
-            alignItems={{ xs: "flex-start", md: "center" }}
-            justifyContent="space-between"
-            spacing={2}
-          >
-            <Box>
-              <Typography variant="subtitle1">
-                Need a custom package for your wedding or event?
-              </Typography>
-              <Typography
-                variant="body2"
-                sx={{ color: "text.secondary", mt: 0.5 }}
-              >
-                Share your details with us and we&apos;ll create a tailored
-                combination of décor, catering, events and technical support to
-                match your vision and budget.
-              </Typography>
-            </Box>
-          </Stack>
         </Box>
       </Box>
     </Layout>
