@@ -7,7 +7,6 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import imgBanquet from "../assets/banquet.jpg";
 import imgBuffet from "../assets/buffet.jpg";
 import imgStageTraditional from "../assets/stage-traditional.jpg";
-import imgStageArch from "../assets/stage-arch.jpg";
 import imgStageModern from "../assets/stage-modern.jpg";
 
 const slides = [
