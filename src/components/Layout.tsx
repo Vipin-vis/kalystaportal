@@ -1,15 +1,6 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  useMediaQuery,
-  Paper,
-  Stack,
-  Button,
-  Fab,
-} from "@mui/material";
+import { Box, Container, useMediaQuery, Fab } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { Link as RouterLink } from "react-router-dom";
 import PhoneIcon from "@mui/icons-material/Phone";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Footer from "./Footer";
