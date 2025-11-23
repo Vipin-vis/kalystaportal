@@ -64,8 +64,8 @@ const Navbar: React.FC = () => {
               src={kalystaMark}
               alt="Kalysta Logo"
               sx={{
-                width: 32,
-                height: 32,
+                width: 42,
+                height: 42,
                 mr: 1.5,
               }}
             />
