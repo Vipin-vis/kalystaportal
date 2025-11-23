@@ -456,7 +456,7 @@ const Services: React.FC = () => {
             <Box>
               <Typography
                 component="a"
-                href="/contact"
+                href="#/contact"
                 sx={{
                   px: 3,
                   py: 1,
