@@ -1,9 +1,15 @@
 import React from "react";
-import { Box, Grid, Typography, Card, CardContent, Stack } from "@mui/material";
+import { Box, Grid, Typography, Card, CardContent, Stack, Button } from "@mui/material";
 import Layout from "../components/Layout";
-import HeroCarousel from "../components/HeroCarousel";
+import HeroCarousel from "../components/HeroCarousel"; // WhatsApp number for Kalysta (change if needed)
+
+
 
 const Home: React.FC = () => {
+
+  const handleEquire = () => {
+    // window.redirect
+  }
   return (
     <Layout>
       <Box sx={{ display: "flex", flexDirection: "column", gap: 6 }}>
@@ -70,7 +76,9 @@ const Home: React.FC = () => {
                   For every celebration
                 </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                 Engagements, weddings, receptions, sadhya layouts, birthdays and intimate gatherings – curated in Kalysta’s signature timeless luxury.
+                  Engagements, weddings, receptions, sadhya layouts, birthdays
+                  and intimate gatherings – curated in Kalysta’s signature
+                  timeless luxury.
                 </Typography>
               </CardContent>
             </Card>
@@ -96,15 +104,20 @@ const Home: React.FC = () => {
               <Typography variant="subtitle1">
                 Planning a wedding or reception in the next 6–12 months?
               </Typography>
-              <Typography variant="body2" sx={{ color: "text.secondary", mt: 0.5 }}>
+              <Typography
+                variant="body2"
+                sx={{ color: "text.secondary", mt: 0.5 }}
+              >
                 Share your date, venue and guest count for a tailored décor and
                 planning proposal.
               </Typography>
             </Box>
+
             <Box>
+              <Button onClick={handleEquire}>
+                
               <Typography
-                component="a"
-                href="/contact"
+
                 sx={{
                   px: 3,
                   py: 1,
@@ -119,6 +132,7 @@ const Home: React.FC = () => {
               >
                 Enquire Now
               </Typography>
+              </Button>
             </Box>
           </Stack>
         </Box>
