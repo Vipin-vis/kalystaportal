@@ -283,8 +283,7 @@ const Services: React.FC = () => {
                   <ul style={{ margin: 0, paddingLeft: "1.1rem" }}>
                     <li>Lights and sound for events and receptions</li>
                     <li>Fusion DJ and live music performances</li>
-                    <li>Traditional programs such as Mohiniyattam</li>
-                    <li>Vattapaatu and other regional art forms</li>
+                    <li>Traditional programs such as Mohiniyattam Vattapaatu and other regional art forms</li>
                     <li>Custom concept events for haldi, mehendi & more</li>
                   </ul>
                 </Typography>
