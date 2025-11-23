@@ -143,7 +143,7 @@ const HeroCarousel: React.FC = () => {
               py: 1,
               fontSize: 13,
             }}
-            href="/contact"
+            href="#/contact"
           >
             Plan Your Event
           </Button>
