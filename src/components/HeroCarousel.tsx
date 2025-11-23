@@ -157,7 +157,7 @@ const HeroCarousel: React.FC = () => {
               fontSize: 13,
               borderColor: "rgba(212,175,55,0.7)",
             }}
-            href="/gallery"
+            href="#/gallery"
           >
             View Gallery
           </Button>
