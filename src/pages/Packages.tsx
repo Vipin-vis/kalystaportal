@@ -6,7 +6,6 @@ import {
   Card,
   CardContent,
   Chip,
-  Stack,
   Divider,
 } from "@mui/material";
 import Layout from "../components/Layout";
