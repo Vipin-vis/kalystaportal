@@ -39,88 +39,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Container maxWidth="lg">{children}</Container>
       </Box>
 
-      {isMobile && <MobileBottomBar />}
-
       <FloatingContactButtons />
 
       <Footer />
     </Box>
-  );
-};
-
-/** Sticky bottom bar on mobile:
- *  - BOOK US NOW → /contact
- *  - WhatsApp quick access
- */
-const MobileBottomBar: React.FC = () => {
-  return (
-    <Paper
-      elevation={8}
-      sx={{
-        position: "fixed",
-        bottom: 0,
-        left: 0,
-        right: 0,
-        borderRadius: "16px 16px 0 0",
-        bgcolor: "rgba(5,5,7,0.98)",
-        borderTop: "1px solid rgba(212,175,55,0.4)",
-        px: 2,
-        py: 1.2,
-        zIndex: (theme) => theme.zIndex.appBar + 1,
-      }}
-    >
-      <Stack
-        direction="row"
-        spacing={1.5}
-        alignItems="center"
-        justifyContent="space-between"
-      >
-        <Button
-          component={RouterLink}
-          to="/contact"
-          variant="contained"
-          fullWidth
-          sx={{
-            borderRadius: 999,
-            fontSize: 12,
-            letterSpacing: "0.12em",
-            py: 1,
-            textTransform: "uppercase",
-            position: "relative",
-            "@keyframes pulseGlow": {
-              "0%": {
-                boxShadow: "0 0 0 0 rgba(212,175,55,0.7)",
-              },
-              "70%": {
-                boxShadow: "0 0 0 15px rgba(212,175,55,0)",
-              },
-              "100%": {
-                boxShadow: "0 0 0 0 rgba(212,175,55,0)",
-              },
-            },
-            animation: "pulseGlow 2.4s ease-out infinite",
-          }}
-        >
-          BOOK US NOW
-        </Button>
-
-        <Button
-          component="a"
-          href="https://wa.me/917012761287"
-          target="_blank"
-          variant="outlined"
-          sx={{
-            minWidth: 52,
-            borderRadius: 999,
-            borderColor: "rgba(212,175,55,0.9)",
-            color: "primary.main",
-            px: 1,
-          }}
-        >
-          <WhatsAppIcon fontSize="small" />
-        </Button>
-      </Stack>
-    </Paper>
   );
 };
 
