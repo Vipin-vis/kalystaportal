@@ -16,7 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
 import { Link as RouterLink } from "react-router-dom";
 
-// TODO: replace with your actual logo path
+// TODO: replace this with your actual logo path / name
 import kalystaMark from "../assets/logo.jpg";
 
 const links = [
@@ -25,7 +25,7 @@ const links = [
   { to: "/gallery", label: "Gallery" },
   { to: "/packages", label: "Packages" },
   { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" },
+  // no direct "Contact" item – CTA button handles that
 ];
 
 const Navbar: React.FC = () => {
@@ -64,9 +64,10 @@ const Navbar: React.FC = () => {
               src={kalystaMark}
               alt="Kalysta Logo"
               sx={{
-                width: 42,
-                height: 42,
+                width: 32,
+                height: 32,
                 mr: 1.5,
+                borderRadius: "50%",
               }}
             />
             <Box>
@@ -92,9 +93,16 @@ const Navbar: React.FC = () => {
             </Box>
           </Box>
 
-          {/* Desktop nav */}
+          {/* Desktop navigation */}
           {!isMobile && (
-            <Box sx={{ ml: "auto", display: "flex", alignItems: "center", gap: 2 }}>
+            <Box
+              sx={{
+                ml: "auto",
+                display: "flex",
+                alignItems: "center",
+                gap: 2,
+              }}
+            >
               {links.map((link) => (
                 <Button
                   key={link.to}
@@ -105,7 +113,8 @@ const Navbar: React.FC = () => {
                     color: "text.secondary",
                     fontSize: 12,
                     letterSpacing: "0.14em",
-                    "&.active, &:hover": {
+                    textTransform: "uppercase",
+                    "&:hover": {
                       color: "primary.main",
                     },
                   }}
@@ -113,26 +122,65 @@ const Navbar: React.FC = () => {
                   {link.label}
                 </Button>
               ))}
+
+              {/* MAIN CTA: BOOK US NOW */}
               <Button
                 component={RouterLink}
                 to="/contact"
                 variant="outlined"
                 size="small"
                 sx={{
+                  position: "relative",
+                  overflow: "hidden",
+                  borderRadius: 999,
+                  px: 2.8,
+                  fontSize: 12,
+                  letterSpacing: "0.16em",
+                  textTransform: "uppercase",
                   borderColor: "primary.main",
                   color: "primary.main",
-                  borderRadius: 999,
-                  px: 2.5,
+                  transition:
+                    "background 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease",
+                  "&::before": {
+                    content: '""',
+                    position: "absolute",
+                    inset: 0,
+                    background:
+                      "linear-gradient(120deg, rgba(212,175,55,0.15), rgba(212,175,55,0.6), rgba(212,175,55,0.15))",
+                    opacity: 0,
+                    transform: "translateX(-40%)",
+                    transition: "opacity 0.3s ease, transform 0.4s ease",
+                  },
+                  "&:hover::before": {
+                    opacity: 1,
+                    transform: "translateX(0%)",
+                  },
+                  "&:hover": {
+                    color: "#050507",
+                    boxShadow: "0 0 18px rgba(212,175,55,0.65)",
+                    borderColor: "transparent",
+                    background:
+                      "linear-gradient(120deg, #f6e27a, #d4af37, #f6e27a)",
+                    transform: "translateY(-1px)",
+                  },
+                  "&:active": {
+                    transform: "translateY(0)",
+                    boxShadow: "0 0 10px rgba(212,175,55,0.45)",
+                  },
                 }}
               >
-                Book Consultation
+                BOOK US NOW
               </Button>
             </Box>
           )}
 
-          {/* Mobile menu */}
+          {/* Mobile menu icon */}
           {isMobile && (
-            <IconButton edge="end" onClick={toggleDrawer} sx={{ color: "primary.main" }}>
+            <IconButton
+              edge="end"
+              onClick={toggleDrawer}
+              sx={{ color: "primary.main" }}
+            >
               <MenuIcon />
             </IconButton>
           )}
@@ -163,11 +211,31 @@ const Navbar: React.FC = () => {
                     sx: {
                       fontSize: 13,
                       letterSpacing: "0.18em",
+                      textTransform: "uppercase",
                     },
                   }}
                 />
               </ListItemButton>
             ))}
+
+            {/* Mobile drawer CTA as well */}
+            <ListItemButton
+              component={RouterLink}
+              to="/contact"
+              onClick={toggleDrawer}
+            >
+              <ListItemText
+                primary="BOOK US NOW"
+                primaryTypographyProps={{
+                  sx: {
+                    fontSize: 13,
+                    letterSpacing: "0.18em",
+                    textTransform: "uppercase",
+                    color: "primary.main",
+                  },
+                }}
+              />
+            </ListItemButton>
           </List>
         </Box>
       </Drawer>
