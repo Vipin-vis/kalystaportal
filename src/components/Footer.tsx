@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Typography, Link as MuiLink, Grid, IconButton } from "@mui/material";
+import { Box, Container, Typography, Grid, IconButton } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
