@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
               {/* WhatsApp */}
               <IconButton
                 component="a"
-                href="https://wa.me/917012761287https://whatsapp.com/channel/0029VbC6yU53GJP70shMp609"
+                href="https://whatsapp.com/channel/0029VbC6yU53GJP70shMp609"
                 target="_blank"
                 sx={{
                   color: "text.secondary",
