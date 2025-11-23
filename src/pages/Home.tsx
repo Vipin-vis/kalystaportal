@@ -70,9 +70,7 @@ const Home: React.FC = () => {
                   For every celebration
                 </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  Engagements, weddings, receptions, sadhya layouts, birthdays
-                  and intimate gatherings – designed in Kalysta’s signature
-                  black-and-gold mood.
+                 Engagements, weddings, receptions, sadhya layouts, birthdays and intimate gatherings – curated in Kalysta’s signature timeless luxury.
                 </Typography>
               </CardContent>
             </Card>

@@ -13,12 +13,14 @@ const slides = [
   {
     image: imgStageModern,
     label: "Signature Stage Styling",
-    caption: "Modern South Indian wedding aesthetics with rich florals and warm candlelight.",
+    caption:
+      "Modern South Indian wedding aesthetics with rich florals and warm candlelight.",
   },
   {
     image: imgBanquet,
     label: "Traditional Sadhya Elegance",
-    caption: "Classic Kerala sadhya presented with refined, contemporary detailing.",
+    caption:
+      "Classic Kerala sadhya presented with refined, contemporary detailing.",
   },
   {
     image: imgBuffet,
@@ -117,7 +119,8 @@ const HeroCarousel: React.FC = () => {
             mb: 1.5,
           }}
         >
-          Turning moments into <span style={{ color: "#d4af37" }}>memories</span>.
+          Turning moments into{" "}
+          <span style={{ color: "#d4af37" }}>memories</span>.
         </Typography>
         <Typography
           variant="body2"
@@ -127,8 +130,8 @@ const HeroCarousel: React.FC = () => {
             mb: 3,
           }}
         >
-          Bespoke South Indian weddings, reception décor, and intimate celebrations styled in
-          signature black-and-gold luxury.
+        Bespoke South Indian weddings, reception décor, and intimate
+        celebrations styled in signature black-and-gold luxury.
         </Typography>
 
         <Stack direction="row" spacing={2}>
@@ -165,7 +168,11 @@ const HeroCarousel: React.FC = () => {
         <Box sx={{ mt: 5 }}>
           <Typography
             variant="subtitle2"
-            sx={{ color: "primary.main", textTransform: "uppercase", letterSpacing: "0.18em" }}
+            sx={{
+              color: "primary.main",
+              textTransform: "uppercase",
+              letterSpacing: "0.18em",
+            }}
           >
             {slide.label}
           </Typography>
