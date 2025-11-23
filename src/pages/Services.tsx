@@ -47,11 +47,13 @@ const Services: React.FC = () => {
             experiences.
           </Typography>
 
-          <Stack
-            direction="row"
-            flexWrap="wrap"
-            spacing={1}
-            sx={{ mt: 2 }}
+          <Box
+            sx={{
+              mt: 2,
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 1, // row + column spacing
+            }}
           >
             <Chip
               label="Full Wedding Planning"
@@ -97,7 +99,7 @@ const Services: React.FC = () => {
                 fontSize: 11,
               }}
             />
-          </Stack>
+          </Box>
         </Box>
 
         <Divider
@@ -283,7 +285,10 @@ const Services: React.FC = () => {
                   <ul style={{ margin: 0, paddingLeft: "1.1rem" }}>
                     <li>Lights and sound for events and receptions</li>
                     <li>Fusion DJ and live music performances</li>
-                    <li>Traditional programs such as Mohiniyattam Vattapaatu and other regional art forms</li>
+                    <li>
+                      Traditional programs such as Mohiniyattam Vattapaatu and
+                      other regional art forms
+                    </li>
                     <li>Custom concept events for haldi, mehendi & more</li>
                   </ul>
                 </Typography>
