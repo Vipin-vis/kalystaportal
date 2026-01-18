@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
             <Typography variant="body2" sx={{ mt: 1 }}>
               +91 70127 61287
               <br />
-              +91 85475 69694
+              +91 79079 59859
             </Typography>
             <Typography variant="body2" sx={{ mt: 0.5, color: "text.secondary" }}>
               kalystaweddinghub@gmail.com
